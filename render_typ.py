@@ -86,6 +86,7 @@ class FormulaRenderer:
                 Defaults to True.
         """
         if name is not None:
+            os.makedirs("output", exist_ok=True)
             src_output_path = f"output/{name}.typ"
             img_output_path = f"output/{name}.svg"
         else:
