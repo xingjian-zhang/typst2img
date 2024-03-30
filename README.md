@@ -1,5 +1,6 @@
 # Typst Formula Renderer
-A fast script to render your Typst formulas to svg or png.
+
+A customization-allowed fast script to render your Typst formulas to svg or png.
 
 ## Usage
 
