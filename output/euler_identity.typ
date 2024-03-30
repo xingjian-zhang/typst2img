@@ -1,6 +1,5 @@
 #let display(body) = context {
-  let size = measure(body)
-  set page(width: size.width + 20pt, height: size.height + 20pt)
+  set page(width: auto, height: auto, margin: (x: 20pt, y: 20pt))
   
   align([#body], center + horizon)
 }

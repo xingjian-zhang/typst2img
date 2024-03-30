@@ -56,8 +56,7 @@ class FormulaRenderer:
     def _generate_template(self) -> str:
         return (
             f"#let display(body) = context {{\n"
-            f"  let size = measure(body)\n"
-            f"  set page(width: size.width + {self.margin_h}, height: size.height + {self.margin_v})\n"
+            f"  set page(width: auto, height: auto, margin: (x: {self.margin_h}, y: {self.margin_v}))\n"
             f"  {self.override_config}\n"
             f"  align([#body], {self.align})\n"
             f"}}\n")
